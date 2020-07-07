@@ -1,0 +1,43 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Person{
+  background: #eeeeee;
+  width:17rem;
+  padding:5rem;
+  margin:4rem auto;
+  border-radius: 1.3rem;
+  text-align:center;
+  transition: all 0.3s linear;
+
+}
+.Person:hover{
+  box-shadow: 2px 5px 1opx rgba (0,0,0,0.3);
+}
+.Image{
+  border-radius:50%;
+  border:0.1rem solid teal;
+}
+.Person h4{
+  text-transform: capitalize;
+  letter-spacing: 0.15rem;
+  margin:0.25 0;
+  color:teal;
+}
+@media screen and (min-width: 768px){
+  .Person-list{
+    display:grid;
+    grid-template-columns: ifr ifr;
+    grid-gap:1fr;
+  }
+}
+@media screen and (min-width:992px){
+  .Person-list{
+    grid-template-columns: repeat(3,ifr);
+  }
+}
